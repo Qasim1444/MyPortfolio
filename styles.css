@@ -117,6 +117,149 @@ font-size: 15px;
 
 
 
+/* filter start */
+
+.filter-section {
+  border-bottom: 6px solid #ccc;
+  padding: 16px 0;
+}
+
+.filter-margin-right {
+  margin-right: 8px;
+}
+
+.filter-button {
+ 
+  
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: #f1f1f1;
+
+  transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+  background-color: #ddd;
+}
+
+.filter-button-black {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 18px;
+}
+
+.filter-button-white {
+  background-color: #fff;
+  color: #000;
+  padding: 12px 25px;
+}
+
+.filter-hide-small {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .filter-hide-small {
+      display: inline-block;
+  }
+}
+/* filter end */
+
+
+
+/* start three images */
+
+.portfolio-heading
+{
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 700;
+  color: 
+  rgb(0, 0, 0);
+}
+.portfolio-paragraph
+{
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  color: 
+  rgb(0, 0, 0);
+}
+  
+
+.portfolio-images {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
+/* Card container */
+.portfolio-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+/* Margin for bottom space */
+
+/* Image styling */
+.portfolio-image {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect for images */
+.portfolio-hover-opacity:hover {
+  opacity: 0.7;
+}
+
+/* White container for text */
+.portfolio-text-container {
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Text styling */
+.portfolio-text-container p {
+  margin: 0 0 10px;
+}
+
+.portfolio-text-container p:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-text-container b {
+  font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .portfolio-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* en three images */
 
 
 
@@ -251,89 +394,21 @@ font-size: 15px;
     }
   }
   
-/* three images */
-
-  
-/* Row container */
-.portfolio-images {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -8px;
-}
-
-/* Card container */
-.portfolio-item {
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-  padding: 8px;
-  box-sizing: border-box;
-}
-
-/* Margin for bottom space */
-.portfolio-margin-bottom {
-  margin-bottom: 16px;
-}
-
-/* Image styling */
-.portfolio-image {
-  width: 100%;
-  display: block;
-  transition: opacity 0.3s ease;
-}
-
-/* Hover effect for images */
-.portfolio-hover-opacity:hover {
-  opacity: 0.7;
-}
-
-/* White container for text */
-.portfolio-text-container {
-  background-color: #fff;
-  padding: 16px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Text styling */
-.portfolio-text-container p {
-  margin: 0 0 10px;
-}
-
-.portfolio-text-container p:last-child {
-  margin-bottom: 0;
-}
-
-.portfolio-text-container b {
-  font-size: 18px;
-}
-
-/* Responsive design */
-@media (max-width: 992px) {
-  .portfolio-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 600px) {
-  .portfolio-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-
+/* s pagination */
 
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
-  width: 100%;
+ 
+  
+  margin-top: 48px;
+
 }
 
 .pagination a {
   color: black;
   text-align: center;
-  padding: 8px 16px;
+  padding: 11px 16px;
   text-decoration: none;
   transition: background-color .3s;
 }
@@ -345,10 +420,23 @@ font-size: 15px;
 
 .pagination a:hover:not(.active) {background-color: #0c0c0c;color: #fffafa;}
 
-
-
-
-
+/* end pagination */
+/* Add this CSS to align images horizontally */
+.about-images {
+  padding-top: 54px !important;
+ 
+ 
+display: flex;
+}
+.about-images-col
+{
+  padding: 0 8px;
+}
+.about-images-col img
+{
+  width: 500px;
+  height: 315px;
+}
 /* Contact section styles */
 .contact-container {
   padding: 32px;
@@ -629,55 +717,10 @@ hr {
 /* two pic */
 
 
-/* filter start */
 
-.filter-section {
-    border-bottom: 1px solid #ccc;
-    padding: 16px 0;
+/* Add this CSS to align images horizontally */
+.w3-row-padding {
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
 }
-
-.filter-margin-right {
-    margin-right: 8px;
-}
-
-.filter-button {
-   
-    
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #000;
-    background-color: #f1f1f1;
- 
-    transition: background-color 0.3s;
-}
-
-.filter-button:hover {
-    background-color: #ddd;
-}
-
-.filter-button-black {
-    background-color: #000;
-    color: #fff;
-    padding: 12px 18px;
-}
-
-.filter-button-white {
-    background-color: #fff;
-    color: #000;
-    padding: 12px 25px;
-}
-
-.filter-hide-small {
-    display: none;
-}
-
-@media (min-width: 600px) {
-    .filter-hide-small {
-        display: inline-block;
-    }
-}
-/* filter end */

@@ -452,23 +452,26 @@ body {
 /* start Contact section styles */
 .contact-container {
   padding: 32px;
-  background-color: #f1f1f1;
+  background-color: #9E9E9E;
   margin-left: 300px;
 }
 
 .contact-title {
-  margin: 0 0 24px;
+  margin: -10px 0 37px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
 }
 
 .contact-info {
   display: flex;
-  margin: 0 -16px 24px;
+  margin: 0 -16px 43px;
   text-align: center;
 }
 
 .contact-info-item {
   flex: 1;
-  padding: 16px;
+
   color: #fff;
 }
 
@@ -500,14 +503,14 @@ body {
 
 .form-input {
   width: 100%;
-  padding: 8px;
+  padding: 12px 0;
   border: 1px solid #ccc;
 }
 
 .submit-button {
   color: #fff;
   background-color: #000;
-  padding: 12px 24px;
+  padding: 12px 28px;
   border: none;
   cursor: pointer;
 }
@@ -543,85 +546,78 @@ body {
 
 .pricing-column {
   width: 33.33%;
-  padding: 0 16px;
+  padding: 0 8px;
   box-sizing: border-box;
-}
-
-.pricing-margin-bottom {
   margin-bottom: 16px;
 }
+
+
 
 .pricing-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.pricing-border {
   border: 1px solid #ccc;
-}
-
-.pricing-white {
   background-color: #fff;
-}
-
-.pricing-center {
   text-align: center;
-}
-
-.pricing-opacity {
   opacity: 0.60;
 }
 
-.pricing-hover-opacity-off:hover {
+.pricing-list:hover {
   opacity: 1;
 }
 
-.pricing-black,
+
 .pricing-teal {
   color: #fff;
 }
 
 .pricing-black {
   background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  padding-top: 41px;
+  padding-bottom: 32px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
 }
 
 .pricing-teal {
   background-color: #009688;
-}
-
-.pricing-xlarge {
-  font-size: 24px;
-}
-
-.pricing-padding-32 {
-  padding-top: 32px;
+  padding-top: 41px;
   padding-bottom: 32px;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.pricing-padding-16 {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
 
-.pricing-light-grey {
+
+.pricingbtn {
   background-color: #f1f1f1;
-}
-
-.pricing-padding-24 {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.paddingbetween {
+  padding: 18px; /* Adjust the padding value as needed */
+  border-bottom: 1px solid #ccc;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000;
 }
 
 .pricing-button {
   border: none;
   display: inline-block;
   padding: 8px 16px;
+  padding: 16px 28px;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
-  color: inherit;
-  background-color: inherit;
+  background-color: #009688;
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
@@ -630,22 +626,8 @@ body {
 .pricing-button:hover {
   color: #000 !important;
   background-color: #ccc !important;
-}
-
-.pricing-padding-large {
-  padding: 12px 24px;
-}
-
-.pricing-hover-black:hover {
   color: #fff !important;
   background-color: #000 !important;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .pricing-column {
-    width: 100%;
-  }
 }
 
 

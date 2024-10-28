@@ -1,8 +1,16 @@
 body {
   background-color: #F1F1F1;
+margin-left: 310px;
 
 }
-
+@media (max-width: 993px) {
+  .sidebar {
+    display: none;
+  }
+  body{
+    margin-left: 10px;
+  }
+}
 
 .sidebar {
   height: 100%;
@@ -114,7 +122,7 @@ body {
 
 
 .portfolio-title {
-  margin-left: 308px;
+ 
   font-family: Raleway, sans-serif;
   font-size: 36px;
 
@@ -268,8 +276,8 @@ body {
 /* Responsive design */
 @media (max-width: 992px) {
   .portfolio-item {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
   }
 }
 
@@ -283,152 +291,13 @@ body {
 /* en three images */
 
 
-
-.fourcardfooter {
-  margin-top: 47px;
-  margin-left: 300px;
-  font-family: Verdana, sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  
-}
-
-@media (max-width: 993px) {
-  .fourcardfooter {
-    margin-left: 50px;
-  }
-}
-
-@media (max-width: 601px) {
-  .fourcardfooter {
-    margin-left: 20px;
-  }
-
-  .fourcardcolfooter {
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-bottom: 16px !important;
-    float: left;
-    width: 100%;
-
-  }
-}
-
-.fourcardcolfooter {
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-bottom: 16px !important;
-  float: left;
-  width: 30%;
-
-}
-
-.fourcardcolfooter h3 {
-
-  font-family: "Karma, sans-serif";
-  font-weight: 400;
-  font-style: normal;
-  color:
-    rgb(0, 0, 0);
-  font-size: 24px;
-  line-height: 36px;
-
-
-}
-
-.fourcard-col-p1 {
-  font-family: Karma, sans-serif;
-  font-size: 15px;
-  line-height: 23px;
-  font-weight: 400;
-  font-style: normal;
-  color:
-    rgb(0, 0, 0);
-  text-align: center;
-  opacity: 0.60;
-}
-
-
-.Travel {
-  color: #fff !important;
-  background-color: #000 !important;
-  margin-bottom: 16px !important;
-  display: inline-block;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: center;
-}
-
-.footerboxs {
-  color: #fff !important;
-  background-color: #616161 !important;
-  margin-bottom: 16px !important;
-  font-size: 12px !important;
-  display: inline-block;
-  padding-left: 8px;
-  padding-right: 8px;
-  text-align: center;
-}
-
-
-
-.hoverable li:hover {
-  background-color: #f5f5f5;
-}
-
-.paddingalign {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.paddingleft {
-  float: left;
-  margin-right: 16px;
-}
-
-
-
-.large {
-  font-size: 18px;
-}
-
-.centeredhr {
-  margin: auto;
-  width: 100%;
-
-  border-top: 1px solid #eee;
-}
-
-/* Clear float after list items */
-
-@media (max-width: 600px) {
-  .fourcardfooter {
-    margin-left: 20px;
-    margin-right: 20px;
-    /* Add right margin for balance */
-  }
-
-  .fourcardcolfooter {
-    padding-left: 0;
-    /* Remove left padding */
-    padding-right: 0;
-    /* Remove right padding */
-    margin-bottom: 16px !important;
-    float: none;
-    /* Remove float */
-    width: 100%;
-    box-sizing: border-box;
-    /* Include padding in width calculation */
-  }
-}
-
 /* s pagination */
 
 .pagination {
   display: flex;
   justify-content: center;
 
-margin-left: 300px;
+
   margin-top: 48px;
 
 }
@@ -475,8 +344,6 @@ margin-left: 300px;
   width: 100%; /* Make images responsive */
   height: auto; /* Maintain aspect ratio */
 }
-
-/* Add media query for larger screens */
 @media (min-width: 600px) {
   .about-images-col {
     flex: 1 1 50%; /* Two columns on medium screens */
@@ -488,6 +355,9 @@ margin-left: 300px;
     flex: 1 1 33.33%; /* Three columns on larger screens */
   }
 }
+/* Add media query for larger screens */
+
+
 
 /* end aboutimages */
 
@@ -495,7 +365,7 @@ margin-left: 300px;
 .contact-container {
   padding: 24px;
   background-color: #9E9E9E;
-  margin-left: 300px;
+  
 }
 
 .contact-title {
@@ -593,7 +463,17 @@ margin-left: 300px;
   margin-bottom: 16px;
 }
 
+@media (max-width: 992px) {
+  .pricing-column {
+    width: 50%;
+  }
+}
 
+@media (max-width: 600px) {
+  .pricing-column {
+    width: 100%;
+  }
+}
 
 .pricing-list {
   list-style-type: none;
@@ -732,7 +612,7 @@ margin-left: 300px;
   font-family: Raleway, sans-serif;
   font-size: 15px;
   line-height: 23px;
-  font-weight: 400;
+  font-weight: 400; 
   border: none;
 }
 
@@ -798,14 +678,267 @@ margin-top: 44px;
 /* footer */
 
 /* Sets the background color to black */
-.w3-black {
-    background-color: black;
-}
+
 
 .footer-powered
 {
   text-align: center;
   opacity: 0.5;
   transition: opacity 0.3s ease;
-  padding: 24px;
+  padding: 24px 0;
 }
+
+/* Footer Styles */
+/* Footer Styles */
+
+/* Footer Styles */
+
+footer.container {
+  background-color: #333;
+  color: #fff;
+  padding: 32px 0;
+
+
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+footer h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+footer p {
+  line-height: 1.6;
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .list {
+  list-style: none;
+  padding: 0;
+}
+
+footer .list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+footer .list-item {
+
+  
+}
+
+footer .list-item img {
+  margin-right: 10px;
+
+}
+
+footer .tag {
+  display: inline-block;
+  padding: 0px 13px;
+ 
+  font-size: 12px;
+}
+
+footer .tag.black {
+  background-color: #000;
+  color: #fff;
+}
+
+footer .tag.grey {
+  background-color: #777;
+  color: #fff;
+}
+
+footer .tag.small {
+  font-size: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  footer .row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer .column {
+    margin: 20px 0;
+  }
+}
+
+
+.footer-powered
+{
+  color: #ffffff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  opacity: 0.9; /* Opacity change on hover */
+
+  text-align: center; /* Centered text */
+  background-color: black; /* Black background */
+}
+
+
+
+.fourcardfooter {
+  margin-top: 47px;
+  margin-left: 300px;
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #f0f0f0; /* Added background color */
+}
+
+@media (max-width: 993px) {
+  .fourcardfooter {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 601px) {
+  .fourcardfooter {
+    margin-left: 20px;
+  }
+
+  .fourcardcolfooter {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 16px !important;
+    float: left;
+    width: 100%;
+  }
+}
+
+.fourcardcolfooter {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 16px !important;
+  float: left;
+  width: 30%;
+}
+
+.fourcardcolfooter h3 {
+  font-family: "Raleway, sans-serif";
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.fourcard-col-p1 {
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  opacity: 0.60;
+}
+
+.Travel {
+  color: #fff !important;
+  background-color: #000 !important;
+  margin-bottom: 16px !important;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.footerboxs {
+  color: #fff !important;
+  background-color: #616161 !important;
+  margin-bottom: 16px !important;
+  font-size: 12px !important;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.hoverable li:hover {
+  background-color: #CCCCCC;
+}
+
+.paddingalign {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.paddingleft {
+  float: left;
+  margin-right: 16px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.centeredhr {
+  margin: auto;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+
+/* Clear float after list items */
+@media (max-width: 600px) {
+  .fourcardfooter {
+    margin-left: 20px;
+    margin-right: 20px;
+    /* Add right margin for balance */
+  }
+
+  .fourcardcolfooter {
+    padding-left: 0;
+    /* Remove left padding */
+    padding-right: 0;
+    /* Remove right padding */
+    margin-bottom: 16px !important;
+    float: none;
+    /* Remove float */
+    width: 100%;
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+  }
+}
+
